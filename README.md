@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # kanban
 
 > Realtime Kanban
@@ -20,6 +19,3 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# tomy-kanban
->>>>>>> 98765ae3d29dba26f092f011590c16f81f7343fa

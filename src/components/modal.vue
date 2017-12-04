@@ -49,6 +49,7 @@
             </div>
           </div>
           <div class="modal-footer">
+            <button type="button" @click="deleteTask" class="btn btn-danger" data-dismiss="modal">Delete</button>
             <button type="button" @click="editTask" class="btn btn-primary" data-dismiss="modal">Update</button>
           </div>
         </div>
@@ -98,6 +99,13 @@ export default{
         title:this.edit.title,
         content:this.edit.content,
         points:this.edit.points
+      });
+    },
+    deleteTask(){
+      this.$database.ref(`${this.edit.key}`).remove().then(function(){
+        console.log("Success!");
+      }).catch(function(error){
+        console.log(`Error! ${error.message}`);
       });
     }
   }

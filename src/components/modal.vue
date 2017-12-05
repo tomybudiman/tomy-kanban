@@ -51,6 +51,7 @@
           <div class="modal-footer">
             <button type="button" @click="deleteTask" class="btn btn-danger" data-dismiss="modal">Delete</button>
             <button type="button" @click="editTask" class="btn btn-primary" data-dismiss="modal">Update</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
